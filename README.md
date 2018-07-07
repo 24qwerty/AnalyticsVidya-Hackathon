@@ -1,6 +1,5 @@
-# Circle Triangle Classification
+# Santander-Value-Prediction
 
-Convolutional Neural Network trained to achieve 98.2% accuracy on test data for classifying images of circles and triangles.
-Data can be downloaded from https://quickdraw.withgoogle.com/data
+Santander has provided an anonymized data to predict a value of transactions for each potential customer.
 
-Take look at the project page for more information: https://sites.google.com/usc.edu/hand-drawing-classification/home
+The data consist of 4992 features with most entries with value 0. After cleaning the dataset, I have used LightGBM with 5 fold cross validation to predict target value from the given features. The solution scores 1.46 root mean squared error log error.
